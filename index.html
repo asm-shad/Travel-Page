@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Page</title>
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/1ca39a8f04.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
     <header>
-        <nav class="navBar">
-            <div class="logo">Hero <span>Travel</span></div>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Packages</li>
-                    <li>Testimonial</li>
-                    <li>Blog</li>
-                    <li>Contacts</li>
-                </ul>
+        <!-- Nav Bar -->
+        <nav class="container navBar">
+            <div class="logo">
+                <img src="./Images/logo.png" alt="">
+                <h3>Hero <span>Travel</span></h3>
+            </div>
+            <div class="nav-options">
+                <p><span>Home</span></p>
+                <p>Packages</p>
+                <p>Testimonial</p>
+                <p>Blog</p>
+                <p>Contacts</p>
             </div>
         </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h1 class="title">Explore Your Travel</h1>
+        <section class="container explore-your-travel">
+            <div class="explore-container">
+                <h3 class="title">Explore Your Travel</h3>
                 <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-                <form action="">
+                <div class="travel-inputs">
                     <input type="text" placeholder="Where go">
-                    <input type="text" placeholder="When">
-                    <input type="text" placeholder="Select Type">
-                    <input type="text" placeholder="Find Now">
-                </form>
+                    <select name="" id="">
+                        <option value="">When</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Select Type</option>
+                    </select>
+                    <button class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i>Find Now</button>
+                </div>
             </div>
-        </div>
+        </section>
     </header>
     <main>
-
+        
     </main>
     <footer></footer>
 </body>
