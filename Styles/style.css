@@ -2,11 +2,12 @@
 
 body {
     font-family: "Mulish", sans-serif;
+    max-width: 1440px;
 }
 
 /* Default styles */
 * {
-    margin: 0;
+    margin: 0 auto;
 }
 .container{
     width: 90%;
@@ -38,7 +39,6 @@ p{
 
 .logo{
     display: flex;
-    align-items: center;
     width: 280px;
 }
 
@@ -107,11 +107,12 @@ input, select{
     font-size: 1rem;
     color: rgba(19, 19, 24, 0.5);;
 }
-input:focus{
+input:focus, select:focus{
     outline: none;
 }
 .btn-primary{
     width: 175px;
+    height: 3.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,4 +123,43 @@ input:focus{
     border-radius: 0.5rem;
     font-size: 1rem;
     color: white;
+    font-weight: 800;
 }
+
+/* Popular Section  */
+
+.popular-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+.img-content{
+    width: 100%;
+}
+
+.text-content p, .text-content li {
+    text-align: left;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    word-spacing: 0.5px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+#popular-title{
+    text-align: left;
+}
+
